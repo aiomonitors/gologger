@@ -32,5 +32,5 @@ func (l *Logger) Yellow(msg string, a ...interface{}) {
 }
 
 func (l *Logger) Normal(msg string, a ...interface{}) {
-	color.NoColor("["+GetTime()+"] "+" ["+l.Name+"] [#]"+msg, a...)
+	color.White("["+GetTime()+"] "+" ["+l.Name+"] [#]"+msg, a...)
 }
