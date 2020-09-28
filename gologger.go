@@ -10,6 +10,9 @@ type Logger struct {
 	Name string `json:"name"`
 }
 
+func NewLogger(name string) *Logger {
+	return &Logger{Name: name}
+}
 func GetTime() string {
 	currentTime := time.Now()
 	return currentTime.Format("15:04:05.000000")
